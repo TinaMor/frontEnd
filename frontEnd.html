@@ -1,0 +1,171 @@
+<!-- <form action="/my-handling-form-page" method="post"> -->
+<form action="action_page.php">
+
+<style>
+
+    form {
+        margin: 0 auto;
+        width: 600px;
+        padding: 2em;
+        border: 3px solid #CCC;
+        border-radius: 1em;
+    }
+
+    h1 {
+        color: blue;
+        font-family: Georgia, serif;
+        font-size: 120%;
+    }
+
+    p  {
+        color: red;
+        font-family: Georgia, serif;
+        font-size: 80%;
+    }
+
+    form div + div {
+        margin-top: 1em;
+    }
+
+    /*label {
+        display: inline-block;
+        width: 200px;
+       text-align: right;
+    }*/
+    label {
+        display: block;
+        width: 150px;
+        float: left;
+    }
+        
+    label:after { content: ": " }
+
+    input {
+        font: 1em sans-serif;
+
+        width: 200px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        margin: 8px 0;
+        display: inline-block;
+    }
+
+    input:focus {
+        border-color: #000;
+    }
+
+    button {
+        border-radius: 4px;
+        background-color: #555555;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+</style>
+
+    <h1>East Africa Community Visa Application</h1>
+
+<!-- Personal Details -->
+    <div>
+        <label><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="fname" required>
+    </div>
+
+    <div>
+        <label><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="lname" required>
+    </div>
+
+    <div class="imgcontainer">
+        <p><b>Please upload a recent photo of yourself</b></p>
+        <input type="file" name="pic" accept="image/*">
+    </div>
+
+    <div class="form-row show-inputbtns">
+        <label><b>Date of Birth</b></label>
+        <input type="date" data-date-inline-picker="false" data-date-popover='{
+        "inline": true
+        }' />
+    </div>
+
+    <div>
+        <label><b>ID/ PP No.</b></label>
+        <input type="text" name="id" required>
+    </div>
+
+    <div>
+        <label><b>Country of Residence</b></label>
+        <select id="countries" name="countries">
+            <option value="" disabled selected hidden>Please Choose...</option>      
+            <option value="Burundi">Burundi</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Sudan">Sudan</option>
+            <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+            <option value="Uganda">Uganda</option>
+        </select>
+    </div>
+
+    <div>
+       <label><b>Destination</b></label>
+        <select id="countries" name="countries">
+            <option value="" disabled selected hidden>Please Choose...</option>
+            <option value="Burundi">Burundi</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Sudan">Sudan</option>
+            <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+            <option value="Uganda">Uganda</option>
+        </select>
+    </div>
+
+    <div>
+        <h4> Duration of Stay </h4>
+        <label><b>Date of Entry</b></label>
+        <input type="date" data-date-inline-picker="false" data-date-popover='{
+        "inline": true
+        }' />
+    </div>
+
+    <div>
+        <label><b>Expected Date of Departure</b></label>
+        <input type="date" data-date-inline-picker="false" data-date-popover='{
+        "inline": true
+        }' />
+    </div>
+
+    <div>
+        <label><b>Payment Option</b></label>
+        <div>
+            <input type="radio" name="paymentOption" value="MPesa"> M-Pesa<br>
+        </div>
+        <div>
+            <input type="radio" name="paymentOption" value="Master Card"> Master Card<br>
+        </div>
+        <div>
+            <input type="radio" name="paymentOption" value="Visa"> Visa<br><br>
+        </div>
+    </div>
+
+    <p><i>*Submission can only be done after visa fees are paid. Visa fees once paid is non-refundable.</i></p>
+
+
+    <div> 
+        <input type="checkbox" checked="checked"> I acknowledge that the details I have provided are all correct
+    </div>
+
+    <div> 
+        <button type="submit">Submit Application</button>
+    </div>
+
+</form>
+
+
+
